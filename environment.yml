@@ -1,0 +1,20 @@
+name: 3k-rice-genomic-prediction
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.7
+  - pip
+  - pip:
+      # --- Direct Core Runtime Dependencies (core_engine.py & step_master_pipeline.py) ---
+      - numpy==1.26.4
+      - pandas==2.3.3
+      - scipy==1.17.1
+      - scikit-learn==1.8.0
+      - torch==2.11.0
+      - pandas-plink==2.3.2
+
+      # --- Optional Supplementary Dependencies (Figures & Notebook Generation) ---
+      - matplotlib==3.10.8   # Required for generate_master_figures.py
+      - seaborn==0.13.2      # Required for generate_master_figures.py
+      - nbformat==5.11.1     # Required for build_notebook.py
+      - ipykernel==7.2.0     # Optional: For interactive Jupyter notebook execution
