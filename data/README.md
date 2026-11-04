@@ -307,11 +307,8 @@ This research integrates publicly available genotypic and phenotypic data from t
 | **Binary Genotypes (`.bed`, ~305.7 MB)** | External / Archive | `data/base_filtered_...bed` | Available in Zenodo package; instructions below |
 | **Benchmark Outputs** | Yes | `artifacts/` | Pre-computed evaluation archives and tables |
 
-#### How to Obtain the Binary Genotype Files (`.bed`)
-Due to Git file size limitations (files exceeding 100 MB cannot be hosted directly in standard Git repositories without Git LFS), the 305.7 MB binary PLINK matrix `base_filtered_v0.7_0.8_10kb_1_0.8_50_1.bed` is preserved in the research project's Zenodo data repository accompanying publication. To run the full genomic pipeline from scratch:
-1. Download `base_filtered_v0.7_0.8_10kb_1_0.8_50_1.bed` from the public Zenodo deposition.
-2. Place the `.bed` file into this `data/` directory alongside the existing `.fam` and `.bim` files.
-3. Verify its SHA-256 checksum matches `5539f718639f2579a0f6cbe88f624ff754f24d13a78cc118124207739fdc7fc0`.
+#### How to Obtain the Binary Genotype Files (`.bed .bim .fam`)
+Kindly download the PLINK triplet files from the official IRRI websites. The files prefix name will be `base_filtered_v0.7_0.8_10kb_1_0.8_50_1.` followed by bed, bim, and fam extensions.
 
 ---
 
