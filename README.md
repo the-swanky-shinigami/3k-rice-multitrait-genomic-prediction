@@ -1,5 +1,7 @@
 # 3K Rice Multitrait Genomic Prediction
 
+[![DOI](https://img.shields.io/badge/DOI-10.21203%2Frs.3.rs--10466317%2Fv1-blue.svg)](https://doi.org/10.5281/zenodo.23971285)
+
 This repository contains the source code and selected data-processing resources accompanying the study:
 
 **Sparse Multi-Trait Genomic Prediction in the 3,000 Rice Genomes: An Empirical Evaluation of Linear Baselines, Auxiliary Helper Phenotypes, and Neural Multi-Task Strategies**
@@ -20,7 +22,14 @@ The project investigates genomic prediction across multiple rice traits using li
 ├── pipeline_config.json
 │
 ├── data/
-│   └── canonical_phenotypes.csv
+|   ├── README.md
+│   ├── canonical_phenotypes.csv
+│   ├── cv_fold_assignments.csv
+│   ├── factorial_ablation_per_fold.csv
+│   ├── fold_metrics_all_models.csv
+│   ├── oof_predictions_observed_evaluation.csv
+│   ├── population_cluster_assignments.csv
+|   └── selected_10000_markers_ids.tsv
 │
 └── supplementary_code/
     ├── generate_master_figures.py
@@ -34,7 +43,6 @@ The project investigates genomic prediction across multiple rice traits using li
 | `core_engine.py` | Core computational and modelling implementations used in the study. |
 | `step_master_pipeline.py` | Main pipeline for executing the genomic prediction workflow. |
 | `pipeline_config.json` | Configuration parameters for the analysis. |
-| `data/canonical_phenotypes.csv` | Harmonized phenotype dataset used in the analysis. |
 | `supplementary_code/generate_master_figures.py` | Script for generating the study figures from the analysis outputs. |
 | `supplementary_code/build_notebook.py` | Utility for generating the analysis notebook. |
 | `environment.yml` | Software environment and dependency specifications. |
@@ -69,7 +77,7 @@ If you use this repository in your research, please cite the associated publicat
 
 [The final published article citation and DOI will. be mentioned here when available.]
 
-For software citation, please also cite the archived repository release and its DOI once available through Zenodo.
+For software citation, please also cite the archived repository release and its DOI which is available through Zenodo: https://doi.org/10.5281/zenodo.23971285
 
 ## License
 
